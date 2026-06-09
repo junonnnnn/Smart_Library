@@ -41,6 +41,25 @@ public class BookBST {
         }
         return insertRecursive(current.right, book);
     }
+     public Book search(int isbn) {
+        return searchRecursive(root, isbn);
+    }
+
+    private Book searchRecursive(Node current, int isbn) {
+        if (current == null) {
+            return null;
+        }
+
+        if (isbn == current.book.getIsbn()) {
+            return current.book;
+        }
+
+        if (isbn < current.book.getIsbn()) {
+            return searchRecursive(current.left, isbn);
+        }
+
+        return searchRecursive(current.right, isbn);
+    }
 
     public boolean delete(int isbn) {
         // If the book doesn't exist, we can't delete it.

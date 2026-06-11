@@ -1,0 +1,2 @@
+admin|admin123|ADMIN
+001|JunOnn1107|STUDENT

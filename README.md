@@ -11,7 +11,6 @@ This project implements the Smart Library assignment as a plain Java console app
 - `SmartLibrary.java`: admin logic, borrow/return logic, and `books.txt` persistence.
 - `User.java` and `UserStore.java`: login/register logic and `users.txt` persistence.
 - `SmartLibraryApp.java`: menu-driven console interface.
-- `SmartLibraryTests.java`: no-framework test harness for the main requirements.
 
 ## Default Admin
 
